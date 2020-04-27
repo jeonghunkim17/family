@@ -1,0 +1,104 @@
+/*https://pridiot.tistory.com/15 메뉴 스타일 참고*/
+/*https://kuzuro.blogspot.com/2018/08/htmlcss.html 메뉴 스타일 참고 */
+body{
+  margin:0;
+}
+ul, ol, li {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.mainmenu {
+}
+ul.mainmenu > li {
+  display:inline-block;
+  width:200px;
+  padding:5px 10px;
+  background:#eee;
+  text-align:center;
+  position:relative;
+}
+ul.mainmenu > li:hover {
+  background:#fff;
+}
+ul.mainmenu > li ul.submenu {
+  display:none;
+  position:absolute;
+  top:30px;
+  left:0;
+}
+ul.mainmenu > li:hover ul.submenu {
+  display:block;
+}
+ul.mainmenu > li ul.submenu > li {
+  display:inline-block;
+  width:200px;
+  padding:5px 10px;
+  background:#eee;
+  border:1px solid #eee;
+  text-align:center;
+}
+ul.mainmenu > li ul.submenu > li:hover {
+  background:#fff;
+}
+
+h1{
+  font-size : 100px;
+  text-align : center;
+  border-bottom : 1px solid gray;
+  margin:0;
+  padding:20px;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+#top{
+  border:1px solid black;
+  background-image:url("../image/head.jpg");
+  background-size: 300px;
+}
+#article{
+  padding:0;
+  border:2px solid blue;
+  text-align:center;
+}
+
+/*
+ol{
+  border-right:1px solid gray;
+  width:200px;
+  margin:0;
+  padding:20px;
+}
+#grid
+{
+ display: grid;
+ grid-template-columns: 150px 1fr;
+}
+
+#grid ol{
+  padding-left:32px;
+}
+#grid #article{
+  padding:25px;
+  padding-left : 125px;
+}
+@media(max-width:800px){
+  #grid{
+   display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom : none;
+  }
+}
+*/
+#head{
+  color: green;
+}
